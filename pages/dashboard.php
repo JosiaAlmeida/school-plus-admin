@@ -19,7 +19,7 @@
                 <i class="material-icons opacity-10">weekend</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Today's Money</p>
+                <p class="text-sm mb-0 text-capitalize">Total De Aluno</p>
                 <h4 class="mb-0">$53k</h4>
               </div>
             </div>
@@ -36,7 +36,7 @@
                 <i class="material-icons opacity-10">person</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Today's Users</p>
+                <p class="text-sm mb-0 text-capitalize">Usuarios Masculinos</p>
                 <h4 class="mb-0">2,300</h4>
               </div>
             </div>
@@ -53,7 +53,7 @@
                 <i class="material-icons opacity-10">person</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">New Clients</p>
+                <p class="text-sm mb-0 text-capitalize">Usuario Feminino</p>
                 <h4 class="mb-0">3,462</h4>
               </div>
             </div>
@@ -70,7 +70,7 @@
                 <i class="material-icons opacity-10">weekend</i>
               </div>
               <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Sales</p>
+                <p class="text-sm mb-0 text-capitalize">Aptos</p>
                 <h4 class="mb-0">$103,430</h4>
               </div>
             </div>
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 ">Website Views</h6>
+              <h6 class="mb-0 ">Cadastros</h6>
               <p class="text-sm ">Last Campaign Performance</p>
               <hr class="dark horizontal">
               <div class="d-flex ">
@@ -112,7 +112,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 "> Daily Sales </h6>
+              <h6 class="mb-0 "> Cadastros Aptos </h6>
               <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today sales. </p>
               <hr class="dark horizontal">
               <div class="d-flex ">
@@ -132,7 +132,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 ">Completed Tasks</h6>
+              <h6 class="mb-0 ">Cadastros Recusados</h6>
               <p class="text-sm ">Last Campaign Performance</p>
               <hr class="dark horizontal">
               <div class="d-flex ">
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="row mb-4">
+      <!-- <div class="row mb-4">
         <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
@@ -487,8 +487,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer py-4  ">
+      </div> -->
+      <!-- <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 mb-lg-0 mb-4">
@@ -519,10 +519,10 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </main>
-  <div class="fixed-plugin">
+  <!-- <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
       <i class="material-icons py-2">settings</i>
     </a>
@@ -594,7 +594,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
