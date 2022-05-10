@@ -19,89 +19,82 @@
             </div>
             <div class="card-body px-0 pb-2">
               <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nome</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Curso</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
-                      </th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                        Media</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg"
-                              alt="user4">
+                <form action="./dashboard.php" method="POST">
+                  <table class="table align-items-center mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nome</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Curso</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Telefone</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Idade</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">BI</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
+                        </th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                          Media</th>
+                        <th class="text-secondary opacity-7"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                        foreach ($alunosNaoSelecionado as $key => $value):
+                      ?>
+                      <tr>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                              <div class="d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 text-sm"> <?=$value['nome']?> </h6>
+                                <p class="text-xs text-secondary mb-0"><?=$value['escola_antiga']?></p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="text-xs font-weight-bold mb-0"><?=$value['Curso']?></p>
+                          </td>
+                          </td>
+                          <td>
+                            <p class="text-xs font-weight-bold mb-0"><?=$value['telefone']?></p>
+                          </td>
+                          </td>
+                          <td>
+                            <p class="text-xs font-weight-bold mb-0"><?=$value['idade']?></p>
+                          </td>
+                          </td>
+                          <td>
+                            <p class="text-xs font-weight-bold mb-0"><?=$value['bi']?></p>
+                          </td>
+                          <td class="align-middle text-center text-sm">
+                            <span class="badge badge-sm bg-gradient-dark"><?=$value['selecionado']?'Activado':'Inativo' ?></span>
+                          </td>
+                          <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold"><?=$value['media']?></span>
+                          </td>
+                        <td class="align-middle">
+                          <div class="form-check form-switch ps-0">
+                            <?php
+                              if($value['selecionado']):
+                            ?>
+                              <input class="form-check-input ms-auto" type="checkbox" value="<?= $value['id']?>" name="<?= $value['id']?>" id="<?= $value['id']?>" checked>
+                            <?php 
+                              else:
+                            ?>
+                              <input class="form-check-input ms-auto" type="checkbox" value="<?= $value['id']?>" name="<?= $value['id']?>" id="<?= $value['id']?>">
+                            <?php endif;?>
                           </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Michael Levi</h6>
-                            <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                      </td>
-                      <td class="align-middle">
-                        <div class="form-check form-switch ps-0">
-                          <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked>
-                          <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
-                            for="flexSwitchCheckDefault">Aprovado</label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg"
-                              alt="user6">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                            <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                      </td>
-                      <td class="align-middle">
-                        <div class="form-check form-switch ps-0">
-                          <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked>
-                          <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
-                            for="flexSwitchCheckDefault">Aprovado</label>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                        </td>
+                      </tr>
+                      <?php endforeach ?>
+                    </tbody>
+                  </table>
+                  <div class="p-3">
+                    <button class="btn btn-success" type="submit">Salvar</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </main>
   <div class="fixed-plugin">
@@ -205,4 +198,29 @@
   <script src="../assets/js/material-dashboard.min.js?v=3.0.0"></script>
 </body>
 
+<?php
+  $idArray = array();
+  foreach ($alunosNaoSelecionado as $key => $value){
+    array_push($idArray, $_POST[$value["id"]]);
+  }
+  foreach($idArray as $key){
+    try {
+      if($key){
+        $querychangeCandidatura = "UPDATE candidatura SET selecionado=1 WHERE id='$key'";
+        $changeCandidatura = $myslq_i->query($querychangeCandidatura);
+        if($changeCandidatura->fetch_assoc()){
+          echo "ok";
+        }
+      }
+    } catch (\Throwable $th) {
+    }
+  }
+  $myslq_i->close();
+  header("Location: http://localhost:8080/pages/dashboard.php");
+?>
+<script>
+  const save = () =>{
+    window.location = "http://localhost:8080/pages/dashboard.php"
+  }
+</script>
 </html>
