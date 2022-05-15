@@ -41,7 +41,7 @@ include_once '../config/mySQLI.php'
                 </div>
               </div>
               <div class="card-body">
-                <form role="form" method="POST" action="." class="text-start">
+                <form role="form" method="POST" action="./sign-in.php" class="text-start">
                   <div class="input-group input-group-outline my-3">
                     <label class="form-label">Usuario</label>
                     <input type="text" name="usuario" id="usuario" class="form-control">
@@ -105,6 +105,19 @@ include_once '../config/mySQLI.php'
       </footer>
     </div>
   </main>
+<?php
+  include_once '../service/login.php';
+?>
+  <script >
+    const Next =()=> {
+      const isAdmin = ["<?= $_SESSION['admin']['id'] ?>","<?= $_SESSION['admin']['usuario'] ?>","<?= $_SESSION['admin']['senha'] ?>"]
+      const verificUser = isAdmin.map(item=> item!='')
+      if(verificUser.includes(true)){
+        window.location = "http://localhost:8000/pages/dashboard.php"
+      }else alert("Dados incorretos")
+    }
+    window.addEventListener('load', Next())
+  </script>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -126,10 +139,3 @@ include_once '../config/mySQLI.php'
 </body>
 
 </html>
-<?php
-  include_once '../service/login.php';
-  if(isset($_SESSION['admin'])){
-    header("location: ./dashboard.php", true, 301);
-    exit(0);
-  }
-?>

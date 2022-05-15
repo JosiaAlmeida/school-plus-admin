@@ -54,7 +54,7 @@ try {
     }
     $selecionados = $result[0]['total'];
 
-    $queryAluno = "SELECT cd.nome,cd.escola_antiga, cd.idade, cd.telefone, cd.bi, cd.sexo, cd.media, cd.selecionado, cs.nome 'Curso' FROM candidatura as cd join curso as cs where cd.selecionado=1 and cd.Curso_id=cs.id";
+    $queryAluno = "SELECT cd.id ,cd.nome,cd.escola_antiga, cd.idade, cd.telefone, cd.bi, cd.sexo, cd.media, cd.selecionado, cs.nome 'Curso' FROM candidatura as cd join curso as cs where cd.selecionado=1 and cd.Curso_id=cs.id";
     $alunosCandidatura = $myslq_i->query($queryAluno);
     $result = array();
     while($row = $alunosCandidatura->fetch_assoc()){
