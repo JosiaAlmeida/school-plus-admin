@@ -78,7 +78,7 @@
                   <hr class="horizontal gray-light my-4">
                   <ul class="list-group">
                     <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong> &nbsp; School U. Plus</li>
-                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; (44) 123 1234 123</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; 922 854 599</li>
                     <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; schoolUltraPlus@mail.com</li>
                     <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; AO</li>
                   </ul>
@@ -124,7 +124,7 @@
                         <img src="../assets/img/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
                       </div>
                       <div class="d-flex align-items-start flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Firmino</h6>
+                        <h6 class="mb-0 text-sm">Firmino Lussau</h6>
                         <p class="mb-0 text-xs">IG12A | Número 15</p>
                       </div>
                     </li>
