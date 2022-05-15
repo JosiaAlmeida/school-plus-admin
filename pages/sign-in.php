@@ -113,8 +113,9 @@ include_once '../config/mySQLI.php'
       const isAdmin = ["<?= $_SESSION['admin']['id'] ?>","<?= $_SESSION['admin']['usuario'] ?>","<?= $_SESSION['admin']['senha'] ?>"]
       const verificUser = isAdmin.map(item=> item!='')
       if(verificUser.includes(true)){
+        localStorage.setItem('userOnline', isAdmin)
         window.location = "http://localhost:8000/pages/dashboard.php"
-      }else alert("Dados incorretos")
+      }else alert("Preencha os campos todos")
     }
     window.addEventListener('load', Next())
   </script>

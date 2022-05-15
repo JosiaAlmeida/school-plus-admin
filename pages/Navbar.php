@@ -20,7 +20,7 @@
         <li class="nav-item d-flex align-items-center">
           <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
             <i class="fa fa-user me-sm-1"></i>
-            <span class="d-sm-inline d-none"> Admin </span>
+            <span class="d-sm-inline d-none" id="nameUserOnline"> Admin </span>
           </a>
         </li>
         <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -121,3 +121,13 @@
     </div>
   </div>
 </nav>
+
+<script>
+  window.addEventListener('load',()=>{
+    const user = localStorage.getItem('userOnline').split(',')
+    console.log(user[1])
+    document.getElementById("nameUserOnline").innerHTML = user[1]
+    // const result = 
+    console.log(result)
+  })
+</script>

@@ -97,7 +97,7 @@
                         <img src="../assets/img/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow">
                       </div>
                       <div class="d-flex align-items-start flex-column justify-content-center">
-                        <h6 class="mb-0 text-sm">Pedro Muteca</h6>
+                        <h6 class="mb-0 text-sm">António Muteca</h6>
                         <p class="mb-0 text-xs">IG12A | Número 04</p>
                       </div>
                     </li>
@@ -135,6 +135,15 @@
                       <div class="d-flex align-items-start flex-column justify-content-center">
                         <h6 class="mb-0 text-sm">Josia Almeida</h6>
                         <p class="mb-0 text-xs">IG12A | Número 22</p>
+                      </div>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center justify-content-center px-0 mb-2">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">João Tchipa</h6>
+                        <p class="mb-0 text-xs">IG12A | Número 34</p>
                       </div>
                     </li>
                   </ul>
